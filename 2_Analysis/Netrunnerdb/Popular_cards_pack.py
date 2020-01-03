@@ -34,7 +34,7 @@ open_name = "Netrunnerdb_cards.json"
 with open(path.join(db_path, open_name)) as json_file:
     cards = json.load(json_file)
 
-selected_pack = packs[-5] #<<<<<<-------------------- Select
+selected_pack = packs[7] #<<<<<<-------------------- Select
 tourna = False
 
 pack_path = result_path +  str(selected_pack['cycle_code']) + '-' + str(selected_pack['position']) + '-' + selected_pack['code'] + ('\\tournament' if tourna else '')
